@@ -66,7 +66,7 @@ struct ContentView: View {
             .padding(.top,50)
             .toolbar{
                 ToolbarItem(placement : .principal){
-                    Text("A moth List")
+                    Text("A smoth List")
                         .font(.largeTitle)
                         .foregroundColor(.red)
                 }
