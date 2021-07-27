@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var students = ["Abdullah","Nasser","Fahad","Ali"]
+    @State var list = ["Abdullah","Nasser","Fahad","Ali"]
     var body: some View{
         return   VStack{
-                SmoothList(students: $students)
+            SmoothList(list:$list)
         }
     }
 }
