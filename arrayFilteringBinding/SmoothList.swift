@@ -36,7 +36,7 @@ struct SmoothList : View{
                             TextField("name", text: searchfilter)
                                 .textFieldStyle(RoundedBorderTextFieldStyle())
                                 .padding(.vertical)
-                            // disabled if search == "" OR if students array already has the name
+                            // disabled if search == "" OR if list already has the search string
                             Button(action:{
                                 if search != "" && !list.contains(search){
                                     list.append(search)
