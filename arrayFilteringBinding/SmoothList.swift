@@ -10,7 +10,7 @@ import SwiftUI
 struct SmoothList : View{
     @Binding var students : [String]
     @State var filteredStudent : [String] = []
-    @Binding var search : String
+    @State var search : String = ""
     var body: some View {
         let searchfilter = Binding<String> (
             get: {search},
