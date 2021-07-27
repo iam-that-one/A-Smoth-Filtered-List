@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SmothList : View{
+struct SmoothList : View{
     @Binding var students : [String]
     @State var filteredStudent : [String] = []
     @Binding var search : String
@@ -24,14 +24,11 @@ struct SmothList : View{
                 }
             }
         )
-        return NavigationView{
-            VStack{
+                VStack{
                 Rectangle()
                     .frame(width: 300,height: CGFloat(filteredStudent.count * 70 + 120))
                     .foregroundColor(Color(.systemGray5))
-                    
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke())
-                    
                     .cornerRadius(10)
                     .overlay(
                         VStack{
@@ -69,13 +66,5 @@ struct SmothList : View{
             .shadow(radius: 10)
             .animation(.spring())
             .padding(.top,50)
-            .toolbar{
-                ToolbarItem(placement : .principal){
-                    Text("A smoth List")
-                        .font(.largeTitle)
-                        .foregroundColor(.red)
-                }
-            }
-        }
     }
 }

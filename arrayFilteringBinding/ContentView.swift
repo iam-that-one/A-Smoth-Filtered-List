@@ -11,8 +11,8 @@ struct ContentView: View {
     @State var students = ["Abdullah","Nasser","Fahad","Ali"]
     @State var search = ""
     var body: some View{
-        VStack{
-            SmothList(students: $students, search: $search)
+        return   VStack{
+                SmoothList(students: $students, search: $search)
         }
     }
 }

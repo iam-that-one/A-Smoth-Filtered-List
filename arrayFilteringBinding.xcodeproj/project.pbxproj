@@ -11,7 +11,7 @@
 		B84D0F7A26AF396400DF15AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84D0F7926AF396400DF15AB /* ContentView.swift */; };
 		B84D0F7C26AF396D00DF15AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84D0F7B26AF396D00DF15AB /* Assets.xcassets */; };
 		B84D0F7F26AF396D00DF15AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B84D0F7E26AF396D00DF15AB /* Preview Assets.xcassets */; };
-		B84D0F8726B082DC00DF15AB /* SmothList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84D0F8626B082DC00DF15AB /* SmothList.swift */; };
+		B84D0F8726B082DC00DF15AB /* SmoothList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B84D0F8626B082DC00DF15AB /* SmoothList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,7 +21,7 @@
 		B84D0F7B26AF396D00DF15AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B84D0F7E26AF396D00DF15AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B84D0F8026AF396D00DF15AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B84D0F8626B082DC00DF15AB /* SmothList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmothList.swift; sourceTree = "<group>"; };
+		B84D0F8626B082DC00DF15AB /* SmoothList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoothList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +56,7 @@
 			children = (
 				B84D0F7726AF396400DF15AB /* arrayFilteringBindingApp.swift */,
 				B84D0F7926AF396400DF15AB /* ContentView.swift */,
-				B84D0F8626B082DC00DF15AB /* SmothList.swift */,
+				B84D0F8626B082DC00DF15AB /* SmoothList.swift */,
 				B84D0F7B26AF396D00DF15AB /* Assets.xcassets */,
 				B84D0F8026AF396D00DF15AB /* Info.plist */,
 				B84D0F7D26AF396D00DF15AB /* Preview Content */,
@@ -143,7 +143,7 @@
 			files = (
 				B84D0F7A26AF396400DF15AB /* ContentView.swift in Sources */,
 				B84D0F7826AF396400DF15AB /* arrayFilteringBindingApp.swift in Sources */,
-				B84D0F8726B082DC00DF15AB /* SmothList.swift in Sources */,
+				B84D0F8726B082DC00DF15AB /* SmoothList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
