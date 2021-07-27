@@ -26,7 +26,7 @@ struct SmoothList : View{
         )
         VStack{
             Rectangle()
-                .frame(width: 300,height: CGFloat(filteredList.count * 70 + 30 < 500 ? CGFloat(filteredList.count * 70 + 100) : UIScreen.main.bounds.height - 200))
+                .frame(width: 300,height: CGFloat(filteredList.count * 70 + 100 < 500 ? CGFloat(filteredList.count * 70 + 100) : UIScreen.main.bounds.height - 200))
                 .foregroundColor(Color(.systemGray5))
                 .overlay(RoundedRectangle(cornerRadius: 10).stroke())
                 .cornerRadius(10)
@@ -54,7 +54,7 @@ struct SmoothList : View{
                                 list.remove(atOffsets: indexSet)
                                 filteredList.remove(atOffsets: indexSet)
                             }
-                        }.frame(height: !list.contains(search) ? CGFloat( filteredList.count * 70 + 30 < 500 ? filteredList.count * 70 + 30 : 500) : CGFloat(filteredList.count * 70 + 30 < 500 ? filteredList.count * 70 + 30 : 800))
+                        }.frame(height: !list.contains(search) ? CGFloat( filteredList.count * 70 + 10 < 500 ? filteredList.count * 70 + 30 : 500) : CGFloat(filteredList.count * 70 + 10 < 500 ? filteredList.count * 70 + 20 : 800))
                         .cornerRadius(10)
                         .listStyle(GroupedListStyle())
                         Spacer()
