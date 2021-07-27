@@ -24,30 +24,33 @@ struct ContentView: View {
                 }
             }
         )
-       return NavigationView{
+        return NavigationView{
             VStack{
                 Rectangle()
-                    .foregroundColor(Color(.clear))
-                    .frame(width: 300,height: CGFloat(filteredStudent.count * 70 + 80))
-                    .padding()
+                    .frame(width: 300,height: CGFloat(filteredStudent.count * 70 + 120))
+                    .foregroundColor(Color(.systemGray5))
+                    
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke())
+                    
                     .cornerRadius(10)
                     .overlay(
                         VStack{
                             HStack{
                                 TextField("name", text: searchfilter)
                                     .textFieldStyle(RoundedBorderTextFieldStyle())
+                                    .padding(.vertical)
                                 // disabled if search == "" OR if students array already has the name
                                 Button(action:{
                                     if search != "" && !students.contains(search){
                                         students.append(search)
                                         filteredStudent = students
-
+                                        search = ""
                                     }
                                 }){
                                     Image(systemName: "plus.circle.fill")
                                 }.disabled( search == "" || students.contains(search))
                             }
+                            
                             List{
                                 ForEach(filteredStudent.sorted(), id: \.self) { student in
                                     Text(student)
@@ -57,7 +60,7 @@ struct ContentView: View {
                             .listStyle(GroupedListStyle())
                             Spacer()
                         }.padding(20)
-                        .onAppear{filteredStudent = students}
+                        
                     )
                 Spacer()
             }.onAppear{  filteredStudent = students}
